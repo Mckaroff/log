@@ -13,7 +13,7 @@ jobs:
           graph-directory: .
           output-directory: www
           version: 0.10.6
-          theme-mode: logseq
+          theme-mode: dark
           accent-color: blue
       - name: Add .nojekyll file
         run: touch www/.nojekyll
