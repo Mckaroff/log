@@ -1,0 +1,68 @@
+/* ==============
+   Удаляем кнопки "Journal" (Журнал) и "Cards" (Карточки)
+   ============== */
+
+/* Скрыть кнопку Journal */
+a[data-id="journals"], .ls-journals, .sidebar-item[data-id="journals"] {
+  display: none !important;
+}
+
+/* Скрыть кнопку Cards */
+a[data-id="cards"], .ls-cards, .sidebar-item[data-id="cards"] {
+  display: none !important;
+}
+
+/* ==============
+   Минимальное оформление — делаем похожим на стандарт Logseq
+   ============== */
+body, .ls-main-content {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+/* ==============
+   (Опционально) Делаем шире панель контента
+   ============== */
+.ls-main-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ==============
+   Делаем верхнее меню менее заметным (минимализм)
+   ============== */
+.ls-topbar {
+  background: #fff !important;
+  border-bottom: 1px solid #ececec !important;
+  box-shadow: none !important;
+}
+
+/* ==============
+   TOC (Table of Contents) и Graph всегда видимы — 
+   отключай скрывающие их правила, если были.
+   ============== */
+/* Оглавление и Graph будут доступны, если ты их не скрываешь */
+
+/* ==============
+   Делаем кнопки менее цветными (если нужно)
+   ============== */
+.ls-sidebar a {
+  filter: grayscale(20%);
+  opacity: 0.95;
+}
+
+/* ==============
+   Мелкие доработки (например, убрать footer от Logseq, если мешает)
+   ============== */
+footer, .ls-footer {
+  display: none !important;
+}
+
+/* ==============
+   Скрыть ссылку на справку (Help), если не нужна
+   ============== */
+a[data-id="help"], .ls-help, .sidebar-item[data-id="help"] {
+  display: none !important;
+}
+
+/* (Можно скрыть и другие кнопки по аналогии: просто меняй data-id) */
+
